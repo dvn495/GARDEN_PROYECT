@@ -99,8 +99,8 @@ INSERT INTO forma_pago (id_forma_pago, nombre_forma_pago, descripcion_forma_pago
 INSERT INTO transaccion (id_transaccion, cod_cliente, forma_pago_trasaccion, fecha_transaccion, total_transaccion) VALUES
 ('T001', 1, 3, '2008-01-05', 499.95),
 ('T002', 2, 2, '2008-02-15', 359.97),
-('T003', 3, 3, '2008-03-05', 1949.85),
-('T004', 3, 1, '2009-04-10', 649.95);
+('T003', 4, 3, '2009-03-05', 1949.85),
+('T004', 4, 1, '2009-04-10', 649.95);
 
 INSERT INTO oficina (codigo_oficina, id_ciudad_oficina, id_region_oficina, id_pais_oficina, id_codigo_postal_oficina, id_telefono_oficina, id_direccion_oficina1, id_direccion_oficina2) VALUES
 ('O001', 1, 1, 1, 1, 1, 1, NULL),
@@ -111,7 +111,7 @@ INSERT INTO empleado (id_empleado, nombre_empleado, apellido1_empleado, apellido
 (1, 'Empleado 1', 'Apellido Empleado 1', 'Apellido Empleado 2', '123', 'empleado1@example.com', 'O001', NULL, 'Vendedor'),
 (2, 'Empleado 2', 'Apellido Empleado 3', 'Apellido Empleado 4', '456', 'empleado2@example.com', 'O002', NULL, 'Gerente'),
 (3, 'Empleado 3', 'Apellido Empleado 5', 'Apellido Empleado 6', '789', 'empleado3@example.com', 'O003', 2, 'Representante de Ventas'),
-(4, 'Empleado 4', 'Apellido Empleado 7', 'Apellido Empleado 8', '101', 'empleado4@example.com', 'O001', 1, 'Gerente'),
+(4, 'Empleado 4', 'Apellido Empleado 7', 'Apellido Empleado 8', '101', 'empleado4@example.com', NULL, 1, 'Gerente'),
 (5, 'Empleado 5', 'Apellido Empleado 9', 'Apellido Empleado 10', '112', 'empleado5@example.com', 'O002', 2, 'Representante de Ventas');
 
 UPDATE cliente SET codigo_empleado_rep_ventas = 3 WHERE id_cliente = 1;
