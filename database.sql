@@ -209,7 +209,7 @@ CREATE TABLE empleado(
   apellido2_empleado VARCHAR(50),
   extension VARCHAR(10) NOT NULL,
   email_empleado VARCHAR(100) NOT NULL,
-  codigo_oficina_empleado VARCHAR(10) NOT NULL,
+  codigo_oficina_empleado VARCHAR(10),
   codigo_jefe INT(11),
   puesto VARCHAR(50),
   CONSTRAINT FK_oficina_empleado FOREIGN KEY (codigo_oficina_empleado) REFERENCES oficina(codigo_oficina)
