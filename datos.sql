@@ -88,8 +88,11 @@ INSERT INTO pedido (codigo_pedido, fecha_pedido, fecha_esperada, fecha_entrega, 
 
 INSERT INTO detalle_pedido (codigo_pedido_detalle, codigo_producto_pedido, cantidad, precio_unidad, numero_linea) VALUES
 (1001, 1001, 5, 99.99, 1),
-(1002, 1002, 3, 119.99, 2),
-(1003, 1003, 15, 129.99, 1);
+(1002, 1002, 3, 919.99, 2),
+(1003, 1003, 15, 129.99, 1),
+(1001, 1002, 4, 99.99, 1),
+(1002, 1003, 7, 119.99, 2),
+(1003, 1001, 3, 129.99, 1);
 
 INSERT INTO forma_pago (id_forma_pago, nombre_forma_pago, descripcion_forma_pago) VALUES
 (1, 'Tarjeta de Crédito', 'Pago con tarjeta de crédito'),
@@ -111,7 +114,7 @@ INSERT INTO empleado (id_empleado, nombre_empleado, apellido1_empleado, apellido
 (1, 'Empleado 1', 'Apellido Empleado 1', 'Apellido Empleado 2', '123', 'empleado1@example.com', 'O001', NULL, 'Vendedor'),
 (2, 'Empleado 2', 'Apellido Empleado 3', 'Apellido Empleado 4', '456', 'empleado2@example.com', 'O002', NULL, 'Gerente'),
 (3, 'Empleado 3', 'Apellido Empleado 5', 'Apellido Empleado 6', '789', 'empleado3@example.com', 'O003', 2, 'Representante de Ventas'),
-(4, 'Empleado 4', 'Apellido Empleado 7', 'Apellido Empleado 8', '101', 'empleado4@example.com', NULL, 1, 'Gerente'),
+(4, 'Alberto', 'Soria', 'Apellido Empleado 8', '101', 'empleado4@example.com', NULL, 1, 'Gerente'),
 (5, 'Empleado 5', 'Apellido Empleado 9', 'Apellido Empleado 10', '112', 'empleado5@example.com', 'O002', 2, 'Representante de Ventas');
 
 UPDATE cliente SET codigo_empleado_rep_ventas = 3 WHERE id_cliente = 1;
